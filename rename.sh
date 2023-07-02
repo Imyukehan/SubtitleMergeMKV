@@ -20,5 +20,5 @@ do
   echo "Processing $file"
   filename=$(basename -- "$file")
   filename="${filename%.*}"
-  ffmpeg -i "$file" -c:v libx264 -crf 23 -c:a aac "$1/$filename.mp4"
+  ffmpeg -i "$file" -c:v libx264 -crf 23 -c:a aac "$1/$filename.mkv"
 done
